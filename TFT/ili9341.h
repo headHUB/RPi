@@ -5,40 +5,40 @@
 #include <unistd.h>
 
 // Control pin
-#define TFT_CS		PIN(7)		// Chip-select (0)
-#define TFT_BLC		PIN(11)		// Background light control (0)
-#define TFT_RST		PIN(13)		// Reset (0)
-#define TFT_WR		PIN(15)		// Parallel data write strobe (Rising)
-#define TFT_RS		PIN(19)		// Data(1) / Command(0) selection
-#define TFT_RD		PIN(21)		// Parallel data read strobe (Rising)
+#define TFT_CS		PIN(3)		// Chip-select (0)
+#define TFT_BLC		PIN(19)		// Background light control (0)
+#define TFT_RST		PIN(5)		// Reset (0)
+#define TFT_WR		PIN(29)		// Parallel data write strobe (Rising)
+#define TFT_RS		PIN(31)		// Data(1) / Command(0) selection
+#define TFT_RD		PIN(7)		// Parallel data read strobe (Rising)
 
 // Control pin masks
-#define TFT_MCS		PINM(7)		// Chip-select (0)
-#define TFT_MBLC	PINM(11)	// Background light control (0)
-#define TFT_MRST	PINM(13)	// Reset (0)
-#define TFT_MWR		PINM(15)	// Parallel data write strobe (Rising)
-#define TFT_MRS		PINM(19)	// Data(1) / Command(0) selection
-#define TFT_MRD		PINM(21)	// Parallel data read strobe (Rising)
+#define TFT_MCS		PINM(3)		// Chip-select (0)
+#define TFT_MBLC	PINM(19)	// Background light control (0)
+#define TFT_MRST	PINM(5)	// Reset (0)
+#define TFT_MWR		PINM(29)	// Parallel data write strobe (Rising)
+#define TFT_MRS		PINM(31)	// Data(1) / Command(0) selection
+#define TFT_MRD		PINM(7)	// Parallel data read strobe (Rising)
 
 // Data pin
-#define TFT_D0		PIN(12)		// Data pin 0
-#define TFT_D1		PIN(16)		// Data pin 1
-#define TFT_D2		PIN(18)		// Data pin 2
-#define TFT_D3		PIN(22)		// Data pin 3
-#define TFT_D4		PIN(24)		// Data pin 4
-#define TFT_D5		PIN(26)		// Data pin 5
-#define TFT_D6		PIN(3)		// Data pin 6
-#define TFT_D7		PIN(5)		// Data pin 7
+#define TFT_D0		PIN(18)		// Data pin 0
+#define TFT_D1		PIN(22)		// Data pin 1
+#define TFT_D2		PIN(11)		// Data pin 2
+#define TFT_D3		PIN(12)		// Data pin 3
+#define TFT_D4		PIN(29)		// Data pin 4
+#define TFT_D5		PIN(13)		// Data pin 5
+#define TFT_D6		PIN(15)		// Data pin 6
+#define TFT_D7		PIN(16)		// Data pin 7
 
 // Data pin masks
-#define TFT_MD0		PINM(12)	// Data pin 0
-#define TFT_MD1		PINM(16)	// Data pin 1
-#define TFT_MD2		PINM(18)	// Data pin 2
-#define TFT_MD3		PINM(22)	// Data pin 3
-#define TFT_MD4		PINM(24)	// Data pin 4
-#define TFT_MD5		PINM(26)	// Data pin 5
-#define TFT_MD6		PINM(3)		// Data pin 6
-#define TFT_MD7		PINM(5)		// Data pin 7
+#define TFT_MD0		PINM(18)	// Data pin 0
+#define TFT_MD1		PINM(22)	// Data pin 1
+#define TFT_MD2		PINM(11)	// Data pin 2
+#define TFT_MD3		PINM(12)	// Data pin 3
+#define TFT_MD4		PINM(29)	// Data pin 4
+#define TFT_MD5		PINM(13)	// Data pin 5
+#define TFT_MD6		PINM(15)		// Data pin 6
+#define TFT_MD7		PINM(16)		// Data pin 7
 
 // 8-bit parallel interface I
 
